@@ -1,0 +1,38 @@
+{
+  "name": "dashboardmern-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest -i --verbose --coverage --runInBand",
+    "start": "node index.js",
+    "dboff": "killall mongod",
+    "watch": "nodemon index.js",
+    "dbon": "sudo mkdir -p ./db && mongod --dbpath ./db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanwinder/dashboardmern-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanwinder/dashboardmern-backend/issues"
+  },
+  "homepage": "https://github.com/Tanwinder/dashboardmern-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "http-errors": "^1.6.3",
+    "mongoose": "^5.2.4",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "jest": "^23.4.1"
+  }
+}
